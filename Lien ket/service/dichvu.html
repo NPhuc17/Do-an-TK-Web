@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="dv.css">
+</head>
+
+<body>
+    <!-- <section class="head_nav">
+        <input type="checkbox" id="menu_bar">
+        <label for="menu_bar">Menu</label>
+        <nav class="navbar">
+          <ul id="menu">
+            
+            <li><a href="TrangChu.html" target="">TRANG CHỦ</a></li>
+            <li><a href="VeJollibee.html">VỀ JOLLIBEE</a></li>
+            <li><a href="#">THỰC ĐƠN<i class="fa-solid fa-arrow-down" style="margin-left: 0.3rem;"></i></a>
+              <ul class="sub_nav">
+                <li><a href="./Lien ket/menu/combo/menu.html">Combo</a></li>
+                <li><a href="./Lien ket/menu/burger/menu.html">Burger</a></li>
+                <li><a href="./Lien ket/menu/chicken/menu.html">Gà giòn</a></li>
+                <li><a href="./Lien ket/menu/spicy chicken/menu.html">Gà giòn cay</a></li>
+                <li><a href="./Lien ket/menu/spaget/menu.html">Mỳ Ý</a></li>
+                <li><a href="./Lien ket/menu/side/menu.html">Đồ ăn kèm</a></li>
+                <li><a href="./Lien ket/menu/drink/menu.html">Thức uống</a></li>
+                <li><a href="./Lien ket/menu/dessert/menu.html">Tráng miệng</a></li>
+              </ul>
+            </li>
+            <li><a href="./Lien ket/service/dichvu.html">DỊCH VỤ</a></li>
+            <li><a href="./Lien ket/news/dist/tintuc.html">TIN TỨC</a></li>
+            <li><a href="cs-lienhe.html">LIÊN HỆ</a></li>
+            <li><a href="dat-hang.html">ĐẶT HÀNG</a></li>
+            <li><a href="./Lien ket/job/index.html">TUYỂN DỤNG</a></li>
+          </ul>
+        </nav>
+      </section> -->
+    <header>
+        <div class="center">
+            <div class="circle circle_opa">
+                <div class="text">
+                    <div class="head_text">
+                        dịch vụ
+                    </div>
+                    <img src="https://jollibee.com.vn/static/version1707319958/frontend/Jollibee/default/vi_VN/images/popline.svg"
+                        alt="">
+                    <div class="sub_text">TẬN HƯỞNG NHỮNG KHOẢNH KHẮC TRỌN VẸN CÙNG JOLLIBEE</div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section>
+        <img src="https://jollibee.com.vn/media/services/1.png" alt=""  class="left_img">
+        <div class="right_info">
+            <h1 class="phone head_text">1900-1533</h1>
+            <div class="container">
+                <a href="/jolibee/menu/combo/menu.html" class="btn btn-4 btn_text"><span>Xem Thêm</span></a>
+            </div>
+        </div>
+    </section>
+
+    <section class="even">
+        <img src="https://jollibee.com.vn/media/services/2.png" alt="" class="left_img">
+        <div class="right_info">
+            <h1 class="party head_text">ĐẶT TIỆC SINH NHẬT</h1>
+            <div class="kid_para">Bạn đang tìm ý tưởng cho một buổi tiệc sinh nhật thật đặc biệt dành cho con của bạn? Hãy chọn những bữa tiệc của Jollibee. Sẽ có nhiều điều vui nhộn và rất đáng nhớ dành cho con của bạn.</div>
+            <div class="container">
+                <a href="#" class="btn btn-4 btn_text"><span>Xem Thêm</span></a>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <img src="https://jollibee.com.vn/media/services/3.png" alt="" class="left_img">
+        <div class="right_info">
+            <h1 class="kid head_text">JOLLIBEE KID CLUB</h1>
+            <div class="kid_para">Hãy để con bạn thoả thích thể hiện và khám phá tài năng bên trong của mình cùng cơ hội gặp gỡ những bạn đồng lứa khác tại Jollibee Kids Club. Cùng tìm hiểu thêm thông tin về Jollibee Kids Club và tham gia ngay.</div>
+            <div class="container">
+                <a href="#" class="btn btn-4 btn_text"><span>Xem Thêm</span></a>
+            </div>
+        </div>
+    </section>
+
+    <section class="even">
+        <img src="https://jollibee.com.vn/media/services/4.png" alt="" class="left_img">
+        <div class="right_info">
+            <h1 class="order head_text">ĐƠN HÀNG LỚN</h1>
+            <div class="kid_para">Để phục vụ sở thích quây quần cùng gia đình và bạn bè, chương trình chiết khấu hấp dẫn dành cho những đơn hàng lớn đã ra đời để đem đến những lựa chọn tiện lợi hơn cho bạn. Liên hệ ngay với cửa hàng gần nhất để được phục vụ.</div>
+            <div class="container">
+                <a href="#" class="btn btn-4 btn_text"><span>Xem Thêm</span></a>
+            </div>
+        </div>
+    </section>
+    
+    <iframe src="/nhap/nhap/nhap.html" frameborder="0" id="myIframe" scrolling="no" style="width: 100%;"></iframe>
+    <script>
+        // Selecting the iframe element
+        var iframe = document.getElementById("myIframe");
+        
+        // Adjusting the iframe height onload event
+        iframe.onload = function(){
+            iframe.style.height = iframe.contentWindow.document.body.scrollHeight + 'px';
+        }
+        </script>
+</body>
+
+</html>

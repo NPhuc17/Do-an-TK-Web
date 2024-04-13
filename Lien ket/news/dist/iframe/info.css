@@ -1,0 +1,16 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,100,900);
+@import url(https://db.onlinewebfonts.com/c/a2029ef7cc1a92ac4469e7891b9195f6?family=Merge);
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+p{
+    margin: 1rem;
+    font-size: 1.5rem;
+    @media (320px <= width <= 1000px )  {
+      margin: 0.2rem;
+      font-size: 1rem;
+      }
+}

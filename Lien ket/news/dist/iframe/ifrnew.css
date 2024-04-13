@@ -1,0 +1,47 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,100,900);
+@import url(https://db.onlinewebfonts.com/c/a2029ef7cc1a92ac4469e7891b9195f6?family=Merge);
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.layout{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 1rem;
+    
+    @media (320px <= width <=600px )  {
+       flex-direction: column;
+       align-items: center;
+        
+      }
+}
+h5{
+    font-size: 1.25rem;
+    font-weight: 700;
+    margin-top: 0.25rem;
+}
+img{
+    width: 100%;
+    
+}
+.width{
+    border: solid white;
+    border-radius: 5px;
+    padding: 0.5rem;
+    width: 30%;
+    @media (320px <= width <= 600px )  {
+        
+         width: 70%;
+         margin-bottom: 0.5rem;
+       }
+
+    /* @media (320px <= width <= 900px )  {
+         width: 40%;
+         margin-bottom: 0.5rem;
+       } */
+}
+p{
+    margin-top: 1rem;
+}

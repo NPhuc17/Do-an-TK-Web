@@ -1,0 +1,341 @@
+
+.container {
+  background-color: wheat;
+
+  margin: 0 auto;
+}
+
+header img {
+  padding-left: 30px;
+  width: 250px;
+  height: 150px;
+}
+header {
+  background-color: rgb(212, 41, 41);
+}
+footer {
+  background-color: rgb(212, 41, 41);
+  display: flex;
+  padding: 10px 10px;
+  color: white;
+  font-weight: bold;
+  font-family: Arial;
+}
+footer img {
+  padding-left: 30px;
+  width: 300px;
+  height: 300px;
+}
+ul {
+  list-style-type: none;
+}
+nav {
+  background-color: rgb(212, 41, 41);
+}
+nav #menu li a {
+  color: white;
+  font-weight: bold;
+  text-decoration: none;
+  display: block;
+  padding: 8px 15px;
+}
+#menu {
+  display: flex;
+}
+nav #menu li:hover a {
+  background: rgb(126, 3, 3);
+  transition: all 0.3s;
+}
+.sub_nav {
+  position: absolute;
+  width: 6.25rem;
+  padding: 0;
+  display: none;
+}
+li:hover .sub_nav {
+  display: inline-block;
+  background-color: rgb(215, 125, 125);
+}
+@media only screeen and(max-width:1318px) {
+  #menu {
+    flex-direction: column;
+    text-align: center;
+  }
+  #toggle {
+    display: block;
+  }
+  nav {
+    display: none;
+  }
+}
+.toggle {
+  text-align: right;
+  background: gray;
+  color: white;
+  padding: 10px;
+  font-size: 20px;
+  cursor: pointer;
+  display: none;
+}
+.search-box {
+  border-radius: 10px;
+  position: absolute;
+  left: 35%;
+  align-items: center;
+  box-sizing: border-box;
+  top: 60px;
+}
+.search-box #search-text {
+  width: 500px;
+  border: solid 3px gray;
+  border-radius: 30px;
+  outline: none;
+  background-color: none;
+  padding: 10px 15px;
+  font-size: 18px;
+}
+.search-box #search-button {
+  background-color: none;
+  border: none;
+  padding: 10px 10px;
+  cursor: pointer;
+  border-radius: 50%;
+}
+button:hover {
+  background-color: gray;
+}
+.DatNgay {
+  width: 130px;
+  height: 30px;
+  background-color: rgb(212, 41, 41);
+  justify-content: center;
+  font-size: larger;
+  text-align: center;
+  font-weight: bold;
+  font-family: Arial;
+  border: solid 1px black;
+  border-radius: 10px;
+  top: 130%;
+  position: absolute;
+  left: 420px;
+  text-decoration: none;
+}
+.DatNgay2 {
+  width: 130px;
+  height: 30px;
+  background-color: rgb(212, 41, 41);
+  justify-content: center;
+  font-size: larger;
+  text-align: center;
+  font-weight: bold;
+  font-family: Arial;
+  border: solid 1px black;
+  border-radius: 10px;
+  top: 130%;
+  position: absolute;
+  left: 770px;
+  text-decoration: none;
+}
+.DatNgay3 {
+  width: 130px;
+  height: 30px;
+  background-color: rgb(212, 41, 41);
+  justify-content: center;
+  font-size: larger;
+  text-align: center;
+  font-weight: bold;
+  font-family: Arial;
+  border: solid 1px black;
+  border-radius: 10px;
+  top: 130%;
+  position: absolute;
+  left: 1100px;
+  text-decoration: none;
+}
+.service {
+  background-color: rgb(245, 214, 158);
+  height: 400px;
+  margin-top: 0;
+}
+.xemthem {
+  width: 130px;
+  height: 30px;
+  background-color: rgb(212, 41, 41);
+  justify-content: center;
+  font-size: larger;
+  text-align: center;
+  font-weight: bold;
+  font-family: Arial;
+  border: solid 1px black;
+  border-radius: 10px;
+  top: 180%;
+  position: absolute;
+  left: 500px;
+  text-decoration: none;
+}
+.xemthem2 {
+  width: 130px;
+  height: 30px;
+  text-align: center;
+  background-color: rgb(212, 41, 41);
+  justify-content: center;
+  font-size: larger;
+  font-weight: bold;
+  font-family: Arial;
+  border: solid 1px black;
+  border-radius: 10px;
+  top: 180%;
+  position: absolute;
+  left: 700px;
+  text-decoration: none;
+}
+.introduce {
+  background: url(background.png);
+  height: 300px;
+}
+.introduce p {
+  font-weight: bold;
+  text-align: center;
+  font-size: large;
+}
+.order {
+  width: 130px;
+  height: 30px;
+  text-align: center;
+  background-color: rgb(212, 41, 41);
+  justify-content: center;
+  font-size: larger;
+  font-weight: bold;
+  font-family: Arial;
+  border: solid 1px black;
+  border-radius: 10px;
+  top: 230%;
+  position: absolute;
+  left: 650px;
+  text-decoration: none;
+}
+
+
+
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+.menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #e31837;
+  
+}
+
+.menu ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  overflow: hidden;
+}
+
+.menu ul li {
+  float: left;
+}
+
+.menu ul li a {
+  display: block;
+  padding: 20px;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+}
+
+.menu ul li a:hover {
+  background-color: rgb(192, 102, 102);
+}
+
+.content {
+  margin-top: 50px; 
+  padding: 20px;
+}
+.head{
+    position: fixed;
+    width: 100%;
+    height: 100px;
+    background-color: rgb(236, 221, 221);
+}
+#anh{
+    width: 110px;
+    height: 110px;
+    margin-top: 20px;
+    margin-left: 20px;
+}
+
+.search-container {
+    display: flex;
+    margin-top: 20px;
+    margin-left: 200px;
+    align-items: center;
+}
+
+input[type="text"] {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-right: 5px;
+    width: 250px;
+}
+
+button[type="submit"] {
+    padding: 8px 16px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button[type="submit"]:hover {
+    background-color: #45a049;
+}
+
+.login-register-button {
+    margin-left: 600px;
+    margin-right: 20px;
+    text-decoration: none;
+    color: white;
+}
+.login-register-button1 {
+    margin-right: 20px;
+    text-decoration: none;
+    color: white;
+}
+.sub_nav {
+  position: absolute;
+  width: 6.25rem;
+  padding: 0;
+  display: none;
+}
+li:hover .sub_nav {
+  display: inline-block;
+  background-color: #e31837;
+}
+
+.head {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: red;
+  z-index: 9999; /* Ensure it's on top of other elements */
+}
+
+.container {
+  padding-top: 150px; /* Adjust as needed depending on the height of .head */
+}
+
+.row {
+  position: relative; /* Ensure relative positioning for proper stacking */
+  z-index: 1; /* Ensure it's behind .head */
+}

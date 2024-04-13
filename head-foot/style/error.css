@@ -1,0 +1,12 @@
+.error-input {
+    border: 1px solid #f44336; /* Màu viền đỏ */
+}
+
+.error-input::placeholder {
+    color: #f44336; /* Màu chữ đỏ */
+}
+.error-message {
+    color: #f44336; /* Màu chữ đỏ */
+    font-size: 14px; /* Kích thước chữ */
+    margin-top: 5px; /* Khoảng cách với khung nhập */
+}

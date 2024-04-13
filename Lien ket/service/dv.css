@@ -1,0 +1,263 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,100,900);
+@import url(https://db.onlinewebfonts.com/c/a2029ef7cc1a92ac4469e7891b9195f6?family=Merge);
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header {
+  height: 60vh;
+  background: url(https://jollibee.com.vn/media/wysiwyg/jollibee-store-background.jpg) no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+header .center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 60vh;
+  margin: 0;
+}
+
+.circle {
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 400px;
+    height: 400px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+
+.text {
+    font-weight: bolder;
+    text-transform: uppercase;
+    color: white;
+}
+
+.head_text {
+    font-family: "Merge";
+    font-size: 2.8125rem;
+    margin-bottom: 2.5rem;
+}
+
+.sub_text {
+    font-family: "Roboto";
+    padding: 2rem;
+}
+
+
+.container { 
+    align-items: start;
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    /* padding: 1em; */
+    text-align: center; 
+}
+.btn_text {
+    /* line-height: 1.4; */
+    padding: 1rem 1rem;
+    /* text-align: center; */
+    text-decoration: none;
+    color: white;
+  }
+.btn {
+  cursor: pointer;
+  font-size:1rem;
+  color: white;
+  font-weight: 700;
+  /* line-height: 45px; */
+  /* margin: 0 0 2em; */
+  max-width: 160px; 
+  position: relative;
+  text-decoration: none;
+  text-transform: uppercase;
+  width: fit-content; 
+  &:hover { text-decoration: none; }
+}
+.btn-4 {
+  border-radius: 10px;
+  overflow: hidden;
+  position: relative;
+  /* border-color: aqua; */
+  background-color: #CE181F;
+  span {
+    z-index: 20;
+  }
+  &:after {
+    background: white;
+    content: "";
+    height: 155px;
+    left: -75px;
+    opacity: .2;
+    position: absolute;
+    top: -50px;
+    transform: rotate(35deg);
+    transition: all 550ms cubic-bezier(0.19, 1, 0.22, 1);
+    width: 50px;
+    z-index: 10;
+  }
+}
+.btn-4:hover {
+  
+  &:after {
+    left: 120%;
+    transition: all 550ms cubic-bezier(0.19, 1, 0.22, 1);
+  }
+}
+section{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 3.5rem 0;
+}
+
+.right_info{
+  font-family: "Merge";
+ 
+}
+.phone .head_text,.right_info .head_text{
+  font-size: 2.25rem;
+  font-weight: 900;
+
+  @media (910px <= width <= 1080px )  {
+    margin-bottom: 1.5rem;
+  }
+  @media (320px <= width <= 900px )  {
+    margin-bottom: 1rem;
+  }
+}
+.right_info .phone{
+  color: #CE181F;
+  margin-bottom: 2rem;
+}
+
+.center{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 3.5rem 0;
+}
+.left_img{
+  width: 20%;
+  height: auto;
+  margin-right: 7rem;
+  @media (910px <= width <= 1080px )  {
+    margin-right: 3rem;
+  }
+  @media (320px <= width <= 900px )  {
+    margin-right: 1rem;
+    width: 30%;
+  }
+  @media (320px <= width <= 500px )  {
+    width: 40%;
+  }
+}
+
+.kid{
+  color:  #F0810D;
+  margin-bottom:1.7rem;
+}
+.kid_para{
+  font-size:0.875rem ;
+  font-family: "Roboto";
+  line-height: 1.625;
+ max-width: 400px;
+ margin-bottom: 1.7rem;
+
+
+@media (320px <= width <= 900px )  {
+  font-size:0.8rem ;
+}
+}
+.order{
+  color:  #5DC6D1;
+  /* margin-bottom:1.7rem; */
+}
+.even{
+  background-color: #F2F2F2;
+}
+.party{
+  color:#A9B91A;
+}
+
+.head_nav{
+  background-color: red;
+}
+.navbar{
+  background-color: red;
+}
+.navbar ul{
+  list-style-type: none;
+}
+.navbar ul li {
+  position: relative;
+  float: left;
+}
+.navbar ul li a{
+  font-size: 1.1rem;
+  padding: 1.1rem;
+  color: #fff;
+  display: block;
+  text-decoration: none;
+  
+}
+.navbar ul li a:hover{
+  background-color: #f00909;
+  color: #fff;
+}
+.navbar ul li .sub_nav{
+  position: absolute;
+  left: 0;
+  width: 6rem;
+  background-color: #e54646;
+  display: none;
+}
+.navbar ul li .sub_nav li{
+  width: 100%;
+  border-top: 1px solid gray;
+}
+.navbar ul li:focus-within > .sub_nav,
+.navbar ul li:hover > .sub_nav{
+  display: initial;
+}
+#menu_bar{
+  display: none;
+}
+label{
+  font-size: 2rem;
+  color: #333;
+  cursor: pointer;
+  display: none;
+}
+@media(max-width:870px) {
+  label{
+    display: initial;
+  }
+  .navbar{
+    position: absolute;
+    top: 20%;
+    left: 0;
+    right: 0;
+    background-color: #e54646;
+    border: 1px soild brown;
+    display: none;
+  }
+  .navbar ul li{
+    width: 100%;
+  }
+  .navbar ul li .sub_nav{
+    position: relative;
+    width: 100%;
+  }
+  .navbar ul li .sub_nav li{
+    background-color: #e54646;
+  }
+  #menu_bar:checked ~ .navbar{
+    display: initial;
+  }
+} 
+

@@ -1,0 +1,199 @@
+
+.step-title {
+    margin-bottom: 0;
+}
+.step-title {
+    font-size: 21px;
+    color: #2b2b2b;
+    text-transform: uppercase;
+    font-family: 'MergeBlack',sans-serif;
+    border-bottom: none;
+}
+.fieldset>.field, .fieldset>.fields>.field {
+    margin: 0 0 20px;
+}
+.fieldset>* {
+    letter-spacing: normal;
+}
+biểu định kiểu tác nhân người dùng
+div {
+    display: block;
+}
+.fieldset {
+    border: 0;
+    margin: 0 0 40px;
+    padding: 0;
+    letter-spacing: -.31em;
+}
+form {
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+}
+
+li {
+    text-align: -webkit-match-parent;
+}
+.search-terms, .cart-summary .checkout-methods-items, .opc-wrapper .opc, .opc-progress-bar, .checkout-agreements-items, .bundle-options-container .block-bundle-summary .bundle.items, .product-items, .prices-tier, .order-details-items .items-qty, .footer.content ul, .block-banners .banner-items, .block-banners-inline .banner-items, .block-event .slider-panel .slider {
+    margin: 0;
+    padding: 0;
+    list-style: none none;
+}
+
+ol {
+    list-style-type: decimal;
+}
+body {
+    color: #333;
+    font-family: 'Roboto','Helvetica Neue',Helvetica,Arial,sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.42857143;
+    font-size: 1.4rem;
+}
+
+html {
+    font-size: 62.5%;
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+    font-size-adjust: 100%;
+}
+.field .control._with-tooltip {
+    position: relative;
+}
+.field-tooltip {
+    cursor: pointer;
+    position: absolute;
+    right: 0;
+    top: 1px;
+}
+div {
+    display: block;
+}
+.step-title {
+    font-size: 21px;
+    color: #2b2b2b;
+    text-transform: uppercase;
+    font-family: 'MergeBlack',sans-serif;
+    border-bottom: none;
+}
+.opc-wrapper .step-title {
+    font-size: 18px;
+    border-bottom: 0;
+    padding-bottom: 0;
+}
+.checkout-shipping-method .step-title {
+    margin-bottom: 0;
+}
+.opc-wrapper .step-title {
+    border-bottom: 1px solid #ccc;
+    margin-bottom: 15px;
+}
+.opc-wrapper .step-title, .opc-block-shipping-information .shipping-information-title, .opc-block-summary>.title, .checkout-agreements-items .checkout-agreements-item-title {
+    padding-bottom: 10px;
+    color: #333;
+    font-weight: 300;
+    font-size: 2.6rem;
+}
+.checkout-index-index .table-checkout-shipping-method {
+    min-width: unset;
+    width: 100%;
+}
+table {
+    width: 100%;
+    border-collapse: collapse;
+    border-spacing: 0;
+    max-width: 100%;
+}
+
+table {
+    display: table;
+    border-collapse: separate;
+    box-sizing: border-box;
+    text-indent: initial;
+    border-spacing: 2px;
+    border-color: gray;
+}
+form {
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+}
+
+li {
+    text-align: -webkit-match-parent;
+}
+tr {
+    display: table-row;
+    vertical-align: inherit;
+    border-color: inherit;
+}
+table {
+    width: 100%;
+    border-collapse: collapse;
+    border-spacing: 0;
+    max-width: 100%;
+}
+
+table {
+    border-collapse: separate;
+    text-indent: initial;
+    border-spacing: 2px;
+}
+
+
+
+.additional-lines {
+            display: flex;
+            align-items: center;
+            margin-bottom: 10px;
+            width: 50%;
+            margin-left: -10px;
+        }
+
+        .additional-lines .line {
+            flex-grow: 1;
+            height: 1px;
+            background-color: black;
+            margin: 0 10px;
+            
+        }
+        body {
+            padding-left: 10px; /* Add left padding to indent the content */
+            .circle-container {
+            display: inline-flex; /* Align items in a row */
+            align-items: center; /* Center vertically */
+            margin-right: 20px; /* Spacing between each circle and text */
+        }
+    }
+
+    .circle-container {
+        display: inline-flex; /* Align items in a row */
+        align-items: center; /* Center vertically */
+        margin-right: 20px; /* Spacing between each circle and text */
+    }
+
+    .circle {
+        width: 20px;
+        height: 20px;
+        border: 1px solid black; 
+        border-radius: 50%; /* Rounded shape */
+        margin-right: 5px; /* Spacing between the circle and text */
+        position: relative;
+        cursor: pointer; /* Change cursor to pointer */
+    }
+
+    .circle::before {
+        content: '';
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 100%;
+        height: 100%;
+        background-color: white; 
+        border-radius: 50%; /* Rounded shape */
+        z-index: -1; /* Ensure the circle is behind the text */
+    }
+
+    
+    .active-circle {
+        background-color: red; 
+    }
+

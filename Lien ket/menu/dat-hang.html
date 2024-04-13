@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" media="all" href="style/styles-m.css">
+    <link rel="stylesheet" type="text/css" media="all" href="style/style.css">
+    <link rel="stylesheet" type="text/css" media="screen and (min-width: 1200px)" href="style/style_l.css">
+    <link rel="shortcut icon" type="image/icon-jolli" href="asset/icon-jolli.png">
+    <link rel="stylesheet" href="styles-m.css">
+</head>
+<body>
+    <h2 style="text-align: center; color: red; font-family: 'MergeBlack',sans-serif;"><b>THÔNG TIN ĐƠN HÀNG</b></h2>
+    <div class="step-title" data-role="title" data-bind="i18n: 'Ship To'"><b>Giao Hàng Đến</b></div>
+    <br><br>
+    <div class="field _required" data-bind="visible: visible, attr: {'name': element.dataScope}, css: additionalClasses" name="shippingAddress.firstname">
+        <div class="control" data-bind="css: {'_with-tooltip': element.tooltip}">
+    <input class="input-text" type="text" data-bind="
+        value: value,
+        valueUpdate: 'keyup',
+        hasFocus: focused,
+        attr: {
+            name: inputName,
+            placeholder: ( (element.dataScope == 'shippingAddress.firstname' || element.dataScope == 'shippingAddress.lastname' || element.dataScope == 'shippingAddress.telephone') ? element.label + ' *' : element.label ) ,
+            'aria-describedby': getDescriptionId(),
+            'aria-required': required,
+            'aria-invalid': error() ? true : 'false',
+            id: uid,
+            test: element.dataScope,
+            disabled: disabled
+        }" name="firstname" placeholder="Tên *" aria-required="true" aria-invalid="false" id="HV56I4J" test="shippingAddress.firstname">
+        </div>
+    </div>
+    <br>
+    <div class="field _required" data-bind="visible: visible, attr: {'name': element.dataScope}, css: additionalClasses" name="shippingAddress.lastname">
+        <div class="control" data-bind="css: {'_with-tooltip': element.tooltip}">
+            
+    <input class="input-text" type="text" data-bind="
+        value: value,
+        valueUpdate: 'keyup',
+        hasFocus: focused,
+        attr: {
+            name: inputName,
+            placeholder: ( (element.dataScope == 'shippingAddress.firstname' || element.dataScope == 'shippingAddress.lastname' || element.dataScope == 'shippingAddress.telephone') ? element.label + ' *' : element.label ) ,
+            'aria-describedby': getDescriptionId(),
+            'aria-required': required,
+            'aria-invalid': error() ? true : 'false',
+            id: uid,
+            test: element.dataScope,
+            disabled: disabled
+        }" name="lastname" placeholder="Họ *" aria-required="true" aria-invalid="false" id="MYJ48H4" test="shippingAddress.lastname">
+        </div>
+    </div>
+    <br>
+    <div class="field _required _error" data-bind="visible: visible, attr: {'name': element.dataScope}, css: additionalClasses" name="shippingAddress.telephone">
+        <div class="control _with-tooltip" data-bind="css: {'_with-tooltip': element.tooltip}">
+            
+    <input class="input-text" type="text" data-bind="
+        value: value,
+        valueUpdate: 'keyup',
+        hasFocus: focused,
+        attr: {
+            name: inputName,
+            placeholder: ( (element.dataScope == 'shippingAddress.firstname' || element.dataScope == 'shippingAddress.lastname' || element.dataScope == 'shippingAddress.telephone') ? element.label + ' *' : element.label ) ,
+            'aria-describedby': getDescriptionId(),
+            'aria-required': required,
+            'aria-invalid': error() ? true : 'false',
+            id: uid,
+            test: element.dataScope,
+            disabled: disabled
+        }" name="telephone" placeholder="Số điện thoại *" aria-required="true" aria-invalid="true" id="CJAGBUM" test="shippingAddress.telephone" aria-describedby="error-CJAGBUM">
+        </div>
+    </div>
+    <br>
+    <div class="control" data-bind="css: {'_with-tooltip': element.tooltip}">
+<input class="input-text" type="email" data-bind="
+    hasFocus: focused,
+    value: value,
+    attr: {
+        name: inputName,
+        placeholder: label,
+        'aria-describedby': getDescriptionId(),
+        'aria-required': required,
+        'aria-invalid': error() ? true : 'false',
+        id: uid,
+        disabled: disabled
+    }" name="custom_attributes[custom_email]" placeholder="E-mail" aria-invalid="false" id="T9XUBVE">
+    </div>
+    <br>
+    <div class="control" data-bind="css: {'_with-tooltip': element.tooltip}">
+        <div class="control-addon">
+        <input class="input-text pac-target-input" data-bind="
+    value: value().hasOwnProperty('value') ? value().value : value,
+    valueUpdate: 'keyup',
+    hasFocus: focused,
+    attr: {
+        name: inputName,
+        placeholder: ( element.dataScope == 'shippingAddress.street.0' ? 'Street Address' : element.label ),
+        'aria-describedby': getDescriptionId(),
+        'aria-required': required,
+        'aria-invalid': error() ? true : 'false',
+        id: uid,
+        disabled: disabled,
+        type: ( element.dataScope == 'shippingAddress.city' ||
+                element.dataScope == 'shippingAddress.region_id' ||
+                element.dataScope == 'shippingAddress.region' ||
+                element.dataScope == 'shippingAddress.postcode' ? 'hidden' : 'text' ),
+        autocomplete: ( element.dataScope == 'shippingAddress.custom_attributes.full_address' ? 'new-password' : 'off' )
+    }" name="custom_attributes[full_address]" placeholder="Nhập địa chỉ của bạn *" aria-invalid="false" id="Q0MLKLP" type="text" autocomplete="new-password" aria-required="true">
+            <label class="addon-prefix" data-bind="attr: { for: element.uid }" for="Q0MLKLP"><span data-bind="text: element.addbefore">Vui lòng nhập và chọn một địa chỉ được gợi ý. Nếu không có địa chỉ gợi ý nào phù hợp, vui lòng liên hệ số hotline của tổng đài để được hỗ trợ.</span></label>
+            
+        </div>
+    </div>
+    <br>
+    <div class="control" data-bind="css: {'_with-tooltip': element.tooltip}">
+<textarea class="admin__control-textarea" data-bind="
+    value: value().hasOwnProperty('value') ? value().value : value,
+    valueUpdate: valueUpdate,
+    hasFocus: focused,
+    attr: {
+        name: inputName,
+        cols: cols,
+        rows: rows,
+        'aria-describedby': noticeId,
+        placeholder: placeholder,
+        id: uid,
+        disabled: disabled
+    }
+    "name="custom_attributes[note]" cols="15" rows="3" aria-describedby="notice-IHG0YJ8" placeholder="Ghi chú" id="IHG0YJ8">
+
+</textarea>
+    </div>
+    
+
+<div class="step-title" data-role="title" data-bind="i18n: 'Shipping Methods'"><b>Phương thức vận chuyển</b></div>
+    <br>
+    <div class="circle-container">
+        <div class="circle active-circle" onclick="toggleCircle(this)"></div>
+        <p>Giao hàng tận nơi</p>
+    </div>
+
+    <div class="additional-lines" style="padding-left: 0px;">
+        <div class="line"></div>
+    </div>
+   
+    <div class="circle-container">
+        <div class="circle" onclick="toggleCircle(this)"></div>
+        <p>Hẹn lấy tại cửa hàng</p>
+    </div>
+
+
+    <script>
+        // Function to toggle the active circle
+        function toggleCircle(circle) {
+            // Remove 'active-circle' class from all circles
+            document.querySelectorAll('.circle').forEach(function(c) {
+                c.classList.remove('active-circle');
+            });
+
+            // Add 'active-circle' class to the clicked circle
+            circle.classList.add('active-circle');
+        }
+    </script>
+
+    <br>
+    <div class="store__pickup" data-bind="visible: isStorePickup()" style="">
+        <div class="field">
+            <label class="label" for="pickup-province" data-bind="i18n: 'State/Province'">Tỉnh thành</label>
+            <div class="control">
+                <select data-bind="options: provinces,
+                            value: selectedProvince,
+                            optionsText: 'name',
+                            optionsValue: 'id',
+                            optionsCaption: selectorProvinceCaption,
+                            attr: {
+                                id: 'pickup-province',
+                                name: 'pickup_province',
+                                class: ''
+                            },
+                            visible: isSelectStoreVisible()" id="pickup-province" name="pickup_province" class=""><option value="">Chọn tỉnh thành *</option><option value="1">Hồ Chí Minh</option></select>
+            </div>
+        </div>
+        <div class="field">
+            <label class="label" for="pickup-store" data-bind="i18n: 'Stores'">Cửa hàng</label>
+            <div class="control">
+                <select data-bind="options: storeArr,
+                            value: selectedStore,
+                            optionsText: 'name',
+                            optionsValue: 'id',
+                            optionsCaption: selectorCaption,
+                            attr: {
+                                id: 'pickup-store',
+                                name: 'pickup_store',
+                                class: ''
+                            },
+                            visible: isSelectStoreVisible()" id="pickup-store" name="pickup_store" class=""><option value="">Chọn cửa hàng *</option><option value="1">JBVN001 - Coopmart Xa Lộ Hà Nội</option><option value="2">JBVN003 - Pasteur</option><option value="3">JBVN004 - Trần Hưng Đạo</option><option value="8">JBVN016 - Coopmart Rạch Miễu</option><option value="9">JBVN018 - Vincom Cộng Hòa</option><option value="17">JBVN027 - Coopmart Lý Thường Kiệt</option><option value="28">JBVN052 - Coopmart Bình Triệu</option><option value="33">JBVN060 - Sài Gòn Star</option><option value="37">JBVN065 - Trường Chinh</option><option value="66">JBVN100 - Vincom Phan Văn Trị</option><option value="68">JBVN102 - Big C An Lạc</option><option value="69">JBVN104 -Vincom Lê Văn Việt</option><option value="80">JBVN115 - EC Âu Cơ</option><option value="95">JBVN130 - Co.op Xtra Sư Vạn Hạnh</option><option value="104">JBVN137 - Satra Củ Chi</option><option value="115">JBVN150 - Giga Mall Phạm Văn Đồng</option><option value="116">JBVN152 - Coopmart Topaz Home</option><option value="117">JBVN149 - Coopmart Sài Gòn Home</option><option value="122">JBVN159 - Coopmart Tô Ký</option><option value="125">JBVN164 - Moonlight Thủ Đức</option><option value="137">JBVN178 - EC Nguyễn Văn Quá</option><option value="138">JBVN173 - EC Lê Đức Thọ</option><option value="148">jbvn184 - EC Tân Hương</option><option value="150">JBVN186 -EC Nguyễn Duy Trinh</option><option value="151">JBVN183 - Coopmart Thang Loi</option><option value="160">JBVN195 - EC Phạm Văn Chiêu</option><option value="171">JBVN203 - EC Hiệp Bình</option><option value="181">jbvn216 - Delto Trần Hưng Đạo 2</option><option value="192">JBVN225 - EC Lê Văn Khương</option></select>
+            </div>
+        </div>
+    
+        <!-- ko if: selectedStore() --><!-- /ko -->
+    </div>
+
+
+
+
+
+    <div class="step-title" data-role="title" data-bind="i18n: 'Shipping Methods'"><b>Ghi chú đơn hàng</b></div>
+    <br>
+    <div class="control" data-bind="css: {'_with-tooltip': element.tooltip}">
+
+<textarea class="admin__control-textarea" data-bind="
+    value: value,
+    valueUpdate: valueUpdate,
+    hasFocus: focused,
+    attr: {
+        name: inputName,
+        cols: cols,
+        rows: rows,
+        'aria-describedby': noticeId,
+        placeholder: placeholder,
+        id: uid,
+        disabled: disabled
+    }" name="" cols="15" rows="3" aria-describedby="notice-OMYVSAT" placeholder="Ghi chú" id="OMYVSAT"></textarea>
+    </div>
+    <br>
+    <div class="actions-toolbar" id="shipping-method-buttons-container">
+        <div class="secondary" data-bind="visible: !isCustomerLoggedIn()">
+            <button data-role="opc-back" type="button" class="button action back secondary" data-bind="click: backToPrevStep()">
+                <span data-bind="i18n: 'Back'">Trở lại</span>
+            </button>
+        </div>
+        <div class="primary">
+            <button data-role="opc-continue" type="submit" class="button action continue primary">
+                <span data-bind="i18n: 'Next'">Tiếp theo</span>
+            </button>
+        </div>
+    </div>
+<br><br>
+
+
+
+
+<footer class="page-footer"><div class="footer content"><div class="footer-text-container">
+    <div class="row">
+    <div class="col col-5 address">
+    <div class="footer-logo"><img src="asset/logo.png" alt=""></div>
+    <div class="info_address">
+    <p>CÔNG TY TNHH JOLLIBEE VIỆT NAM</p>
+    <p>Địa chỉ: Tầng 26, Tòa nhà CII Tower, số 152 Điện Biên Phủ, Phường 25, Quận Bình Thạnh, Thành phố Hồ Chí Minh, Việt Nam</p>
+    <p>Điện thoại: (028) 39309168</p>
+    <p>Tổng đài: <a href="tel:19001533">1900-1533</a></p>
+    <p>Mã số thuế: 0303883266</p>
+    <p>Ngày cấp: 15/07/2008 – Nơi cấp: Cục Thuế Hồ Chí Minh</p>
+    <p>Hộp thư góp ý: <a href="mailto:jbvnfeedback@jollibee.com.vn">jbvnfeedback@jollibee.com.vn</a></p>
+    <p>&nbsp;</p>
+    </div>
+    </div>
+    <div class="col col-3">
+        <a title="GIAO HÀNG TẬN NƠI MIỄN PHÍ" href="tel:19001533" > 
+        <img class="img-responsive" src="asset/sdtgiaohang.png" alt=""> </a>
+    <ul class="list-page">
+    <li><a href="cs-lienhe.html">Liên hệ</a></li>
+    <li><a href="cs-quydinh.html">Chính sách và quy định chung</a></li>
+    <li><a href="cs-thanhtoan.html">Chính sách thanh toán khi đặt hàng</a></li>
+    <li><a href="cs-hoatdong.html">Chính sách hoạt động</a></li>
+    <li><a href="cs-baomat.html">Chính sách bảo mật thông tin</a></li>
+    <li><a href="cs-vanchuyen.html">Thông tin vận chuyển và giao nhận</a></li>
+    <li><a href="cs-dkgiaodich.html">Thông tin đăng ký giao dịch chung</a></li>
+    <li><a href="cs-hd-datphanan.html">Hướng dẫn đặt phần ăn</a></li>
+    </ul>
+    </div>
+    <div class="col col-3">
+    <p class="text-uppercase title">HÃY KẾT NỐI VỚI CHÚNG TÔI</p>
+    <div class="block-social no-padding display-flex">
+        <a class="btn-icon text-white remove-underline" href="http://www.facebook.com/JollibeeVietnam">
+            <img src="asset/icon-fb.png" alt="Facebook" width="34">
+            <span class="text">Facebook </span>
+        </a>
+        <a class="btn-icon text-white remove-underline" href="mailto:jbvnfeedback@jollibee.com.vn">
+            <img src="asset/icon-mail.png" alt="Google mail" width="34"> 
+            <span class="text">E-Mail</span>
+        </a>
+        </div>
+    <style>
+    .nav-sections-top .block-social .text-white .text { display:none }
+    </style> <a href="http://online.gov.vn/Home/WebDetails/92800" target="_blank" rel="noopener">
+        <img src="https://jollibee.com.vn/media/wysiwyg/bocongthuong.png" alt=""></a><hr>
+    <div class="footer-download-app">
+    <p style="font-family: 'MergeBlack', sans-serif; font-weight: bold; text-align: left; font-size: 2.1rem; text-transform: uppercase; margin-bottom: 20px;"><span style="color: #ffffff;">TẢI ỨNG DỤNG ĐẶT HÀNG VỚI NHIỀU ƯU ĐÃI HƠN</span></p>
+    <a href="https://play.google.com/store/apps/details?id=com.jollibee.loyalty"> 
+        <img src="https://jollibee.com.vn/media/jollibee/logo_playstore.png" alt="" width="140" height="42"></a>
+        <a href="https://apps.apple.com/vn/app/jollibee-vietnam/id1554984107"> 
+            <img src="https://jollibee.com.vn/media/jollibee/logo_appstore.png" alt="" width="140" height="42"></a></div>
+    <p>&nbsp;</p></div>
+    </div>
+    </div></div></footer>
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-N5SVNLD"
+        height="0" width="0" style="display:none;visibility:hidden"></iframe>
+    </noscript>
+    <div id="am-recaptcha-container" data-bind="scope:'amRecaptcha'"></div>
+    <div style="background-color: rgb(177, 27, 27); color: white; padding: 10px;text-align: center;">
+        <p>© 2020 Jollibee Viet Nam</p>
+</div>
+</div>
+</body>
+</html>
