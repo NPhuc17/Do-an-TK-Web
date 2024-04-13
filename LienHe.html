@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jollibee Contact</title>
+    
+    <link rel="stylesheet" type="text/css" media="all" href="head-foot/style/styles-m.css">
+    <link rel="stylesheet" type="text/css" media="screen and (min-width: 1200px)" href="head-foot/style/style_l.css">
+    <link rel="shortcut icon" type="image/icon-jolli" href="asset/icon-jolli.png">
+    <link rel="stylesheet" type="text/css" media="all" href="head-foot/style/error.css">
+    <link rel="stylesheet" href="head-foot/style/menu.css">
+    <style>
+        
+</style>
+</head>
+
+<body>
+  <div class="container" style="font-size: 16px;">
+    <div class="head">
+      <div class="menu">
+        <ul>
+          <li><img src="./nhap/asset/logo (1).png" id="anh" /></li>
+          <div class="search-container">
+            <input type="text" id="searchInput" placeholder="Bạn muốn tìm gì?">
+            <button type="submit" onclick="search()">Tìm</button>
+            <a href="#" class="login-register-button" style="text-decoration: none; color: white;">Đăng Nhập</a>
+            <a href="#" class="login-register-button1" style="text-decoration: none; color: white;">Đăng Ký</a>
+        </div>
+          
+          <li><a href="TrangChu.html" >TRANG CHỦ</a></li>
+          <li><a href="VeJollibee.html">VỀ JOLLIBEE</a></li>
+          <li>
+            <a href="#">THỰC ĐƠN</a>
+            <ul class="sub_nav" style="width: 150px;">
+                <li><a href="Lien ket/menu/combo/menu.html" target="_blank">Combo</a></li>
+                <li><a href="../Lien ket/menu/burger/menu.html" target="_blank">Burger</a></li>
+                <li><a href="../Lien ket/menu/chicken/menu.html" target="_blank">Gà giòn</a></li>
+                <li>
+                  <a href="../Lien ket/menu/spicy chicken/menu.html" target="_blank"
+                    >Gà giòn cay</a
+                  >
+                </li>
+                <li><a href="../Lien ket/menu/spaget/menu.html" target="_blank">Mỳ Ý</a></li>
+                <li><a href="../Lien ket/menu/side/menu.html" target="_blank">Đồ ăn kèm</a></li>
+                <li><a href="../Lien ket/menu/drink/menu.html" target="_blank">Thức uống</a></li>
+                <li>
+                  <a href="../Lien ket/menu/dessert/menu.html" target="_blank">Tráng miệng</a>
+                </li>
+            </ul>
+          </li>
+          <li><a href="dichvu.html" >DỊCH VỤ</a></li>
+          <li><a href="TinTuc.html">TIN TỨC</a></li>
+          <li><a href="LienHe.html" >LIÊN HỆ</a></li>
+          <li><a href="TuyenDung.html" >TUYỂN DỤNG</a></li>
+          <li><a href="DanhGia.html">ĐÁNH GIÁ</a></li>
+          <li><a href="Gioithieusinhvien.html" >GIỚI THIỆU</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="container" style="background-color: white; width: 100%; margin-top: -20px; margin-left: -20px;margin-right: -50px; margin-bottom: 10px; height: 1600px;">
+        <div class="header-contact">
+            <h2>Liên hệ Jollibee</h2>
+        </div>
+        <div class="row">
+            <div class="column">
+                <div class="flex-box-contact">
+                    <div class="box-left-contact">
+                        <div class="wrapper">
+                            <h3 class="header-box-left">Thông tin liên hệ</h3>
+                            <div class="address-contact">
+                                <img src="head-foot/asset/duiga.png" alt="" height="20" width="30" > 
+                                Jollibee Việt Nam
+                            </div><br>
+                            <div class="address-contact">
+                                <img src="head-foot/asset/Phone.png" alt="" height="20" width="30">
+                                1900 - 1533
+                            </div><br>
+                            <div class="address-contact">
+                                <img src="head-foot/asset/Map.png" alt="" height="20" width="30">
+                                Số 152 Điện Biên Phủ, Phường 25, Quận Bình Thạnh, Thành phố Hồ Chí Minh, Việt Nam
+                            </div>
+                        </div>
+                        <h3 class="header-box-left">Gửi tin nhắn cho chúng tôi</h3>
+                        <div id="success-message" style="display: none; background-color: #e6f4ea; border: 1px solid #4caf50; padding: 10px; margin-top: 10px;">
+                            Tin nhắn của bạn đã được gửi đi. Jollibee sẽ phản hồi sớm nhất có thể.
+                        </div>
+                        <div id="error-message" style="display: none; background-color: #ffebee; border: 1px solid #f44336; padding: 10px; margin-top: 10px;">
+                            Cần nhập đầy đủ hết các mục.
+                            
+                        </div><br>
+                        <form class="form contact" action="https://jollibee.com.vn/contact/index/post/" id="contact-form" method="post" data-hasrequired="* Phần bắt buộc" novalidate="novalidate">
+                            <fieldset class="fieldset">
+                                <div class="field name required">
+                                    <div class="control">
+                                        <input name="name" id="name" placeholder="Tên *" title="Tên" value="" class="input-text" type="text" data-validate="{required:true}" aria-required="true">
+                                    </div>
+                                </div>
+                                <div class="field telephone required">
+                                    <div class="control">
+                                        <input name="telephone" id="telephone" placeholder="Số điện thoại *" title="Số điện thoại" value="" class="input-text" type="text" data-validate="{required:true, 'validate-number':true, 'validate-phoneLax': true}" aria-required="true">
+                                    </div>
+                                </div>
+                                <div class="field email required">
+                                    <div class="control">
+                                        <input name="email" id="email" placeholder="E-mail *" title="E-mail" value="" class="input-text" type="email" data-validate="{required:true, 'validate-email':true}" aria-required="true">
+                                    </div>
+                                </div>
+                                <div class="field comment required">
+                                    <div class="control">
+                                        <textarea name="comment" id="comment" placeholder="Tin nhắn *" class="input-text" cols="5" rows="3" data-validate="{required:true}" aria-required="true"></textarea>
+                                    </div>
+                                </div>
+                            </fieldset>
+                            <div class="actions-toolbar">
+                                <div class="primary">
+                                    <input type="hidden" name="hideit" id="hideit" value="">
+                                    <button type="submit" title="Gửi" class="action submit primary" am-captcha-protect="true">
+                                        <span>Gửi</span>
+                                    </button>
+            
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="column">
+                <div class="box-right-contact">
+                    <div class="wrapper">
+                        <div class="mapouter">
+                            <div class="gmap_canvas">
+                                <iframe id="gmap_canvas" src="https://maps.google.com/maps?q=16%20tr%C6%B0%C6%A1%C6%A1ng%20%C4%91%E1%BB%8Bnh%20&amp;t=&amp;z=13&amp;ie=UTF8&amp;iwloc=&amp;output=embed" frameborder="0" scrolling="no" ></iframe>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div style="clear: both"></div>
+        
+        <script>
+            var telephoneInput = document.getElementById("telephone");
+var errorMessageTelephone = document.createElement("div");
+errorMessageTelephone.classList.add("error-message");
+errorMessageTelephone.setAttribute("id", "error-message-telephone");
+
+telephoneInput.addEventListener("input", function() {
+    var telephoneValue = telephoneInput.value.trim(); // Lấy giá trị và loại bỏ dấu cách đầu và cuối chuỗi
+    if (!/^\d{10}$/.test(telephoneValue)) { // Kiểm tra có đủ 10 số không
+        errorMessageTelephone.textContent = "Vui lòng nhập đủ 10 số";
+        errorMessageTelephone.style.display = "block";
+        if (!document.getElementById("error-message-telephone")) {
+            telephoneInput.parentNode.appendChild(errorMessageTelephone); // Thêm thông báo vào cha của trường số điện thoại
+        }
+    } else {
+        errorMessageTelephone.textContent = ""; // Xóa thông báo nếu điều kiện đúng
+        errorMessageTelephone.style.display = "none";
+    }
+});
+
+document.getElementById("contact-form").addEventListener("submit", function(event) {
+    event.preventDefault();
+    var successMessage = document.getElementById("success-message");
+    var errorMessage = document.getElementById("error-message");
+    var nameInput = document.getElementById("name");
+    var telephoneInput = document.getElementById("telephone");
+    var emailInput = document.getElementById("email");
+    var commentInput = document.getElementById("comment");
+
+    if (nameInput.value === "" || telephoneInput.value === "" || emailInput.value === "" || commentInput.value === "" || !(/^\d{10}$/.test(telephoneInput.value.trim()))) {
+        errorMessage.style.display = "block";
+        successMessage.style.display = "none";
+        setTimeout(function() {
+            errorMessage.style.display = "none";
+        }, 5000); // 5 seconds
+    } else {
+        // Simulate sending message if all fields are filled and telephone number is valid
+        // Here you would have your actual code to send the message
+        successMessage.style.display = "block";
+        errorMessage.style.display = "none";
+        setTimeout(function() {
+            successMessage.style.display = "none";
+        }, 5000); // 5 seconds
+    }
+});
+
+
+        </script>
+        <script>
+            document.addEventListener("DOMContentLoaded", function() {
+                var phoneElement = document.querySelector('a[href="tel:19001533"]');
+                var emailElement = document.querySelector('a[href="mailto:jbvnfeedback@jollibee.com.vn"]');
+        
+                if (phoneElement) {
+                    phoneElement.addEventListener("mouseenter", function() {
+                        phoneElement.style.textDecoration = "underline";
+                    });
+        
+                    phoneElement.addEventListener("mouseleave", function() {
+                        phoneElement.style.textDecoration = "none";
+                    });
+                }
+        
+                if (emailElement) {
+                    emailElement.addEventListener("mouseenter", function() {
+                        emailElement.style.textDecoration = "underline";
+                    });
+        
+                    emailElement.addEventListener("mouseleave", function() {
+                        emailElement.style.textDecoration = "none";
+                    });
+                }
+            });
+        </script>
+</div>
+
+
+</div>
+</div>
+<iframe src="foot.html" frameborder="0"  scrolling="no" style="width: 100%; height: 500px; margin-top: 550px;"></iframe>
+<script>
+    function search() {
+        var input = document.getElementById('searchInput').value.toLowerCase(); // Chuyển đổi thành chữ thường
+        var links = {
+            'burger': 'Lien ket/menu/burger/menu.html',
+            'gà': 'Lien ket/menu/chicken/menu.html',
+            'combo': 'Lien ket/menu/combo/menu.html',
+            'kem': 'Lien ket/menu/dessert/menu.html',
+            'nước': 'Lien ket/menu/drink/menu.html',
+            'cơm': 'Lien ket/menu/side/menu.html',
+            'mì ý': 'Lien ket/menu/spaget/menu.html',
+            'gà cay': 'Lien ket/menu/spicy chicken/menu.html',
+            'gà sốt cay': 'Lien ket/menu/spicy chicken/menu.html',
+        };
+
+        if (links.hasOwnProperty(input)) {
+            window.location.href = links[input];
+        } else {
+            alert('Không tìm thấy kết quả cho từ khóa: ' + input);
+        }
+    }
+</script>
+<script>
+    document.querySelector(".login-register-button1").addEventListener("click", function() {
+        window.location.href = "signup/sign.html"; // Chuyển hướng đến trang "sign.html" khi nhấp vào liên kết "Đăng Ký"
+    });
+    document.querySelector(".login-register-button").addEventListener("click", function() {
+        window.location.href = "signup/login.html"; // Chuyển hướng đến trang "sign.html" khi nhấp vào liên kết "Đăng Ký"
+    });
+</script>
+</body>
+</html>

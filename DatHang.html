@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" media="all" href="nhap/nhap/style/styles-m.css">
+    <link rel="stylesheet" type="text/css" media="all" href="styleDatHang.css">
+    <link rel="stylesheet" type="text/css" media="screen and (min-width: 1200px)" href="style/style_l.css">
+    <link rel="shortcut icon" type="image/icon-jolli" href="asset/icon-jolli.png">
+    <link rel="stylesheet" href="styleLienHe.css">
+</head>
+<body>
+    <div style="margin-left: 20px; margin-right: 20px;">
+        <h2 style="text-align: center; color: red; font-family: 'MergeBlack',sans-serif;"><b>THÔNG TIN ĐƠN HÀNG</b></h2>
+    
+    <br><br>
+    <div class="field _required" data-bind="visible: visible, attr: {'name': element.dataScope}, css: additionalClasses" name="shippingAddress.firstname">
+        <div class="control" data-bind="css: {'_with-tooltip': element.tooltip}">
+    <input class="input-text" type="text" data-bind="
+        value: value,
+        valueUpdate: 'keyup',
+        hasFocus: focused,
+        attr: {
+            name: inputName,
+            placeholder: ( (element.dataScope == 'shippingAddress.firstname' || element.dataScope == 'shippingAddress.lastname' || element.dataScope == 'shippingAddress.telephone') ? element.label + ' *' : element.label ) ,
+            'aria-describedby': getDescriptionId(),
+            'aria-required': required,
+            'aria-invalid': error() ? true : 'false',
+            id: uid,
+            test: element.dataScope,
+            disabled: disabled
+        }" name="firstname" placeholder="Tên *" aria-required="true" aria-invalid="false" id="HV56I4J" test="shippingAddress.firstname">
+        </div>
+    </div>
+    <br>
+    <div class="field _required" data-bind="visible: visible, attr: {'name': element.dataScope}, css: additionalClasses" name="shippingAddress.lastname">
+        <div class="control" data-bind="css: {'_with-tooltip': element.tooltip}">
+            
+    <input class="input-text" type="text" data-bind="
+        value: value,
+        valueUpdate: 'keyup',
+        hasFocus: focused,
+        attr: {
+            name: inputName,
+            placeholder: ( (element.dataScope == 'shippingAddress.firstname' || element.dataScope == 'shippingAddress.lastname' || element.dataScope == 'shippingAddress.telephone') ? element.label + ' *' : element.label ) ,
+            'aria-describedby': getDescriptionId(),
+            'aria-required': required,
+            'aria-invalid': error() ? true : 'false',
+            id: uid,
+            test: element.dataScope,
+            disabled: disabled
+        }" name="lastname" placeholder="Họ *" aria-required="true" aria-invalid="false" id="MYJ48H4" test="shippingAddress.lastname">
+        </div>
+    </div>
+    <br>
+    <div class="field _required _error" data-bind="visible: visible, attr: {'name': element.dataScope}, css: additionalClasses" name="shippingAddress.telephone">
+        <div class="control _with-tooltip" data-bind="css: {'_with-tooltip': element.tooltip}">
+            
+    <input class="input-text" type="number" data-bind="
+        value: value,
+        valueUpdate: 'keyup',
+        hasFocus: focused,
+        attr: {
+            name: inputName,
+            placeholder: ( (element.dataScope == 'shippingAddress.firstname' || element.dataScope == 'shippingAddress.lastname' || element.dataScope == 'shippingAddress.telephone') ? element.label + ' *' : element.label ) ,
+            'aria-describedby': getDescriptionId(),
+            'aria-required': required,
+            'aria-invalid': error() ? true : 'false',
+            id: uid,
+            test: element.dataScope,
+            disabled: disabled
+        }" name="telephone" placeholder="Số điện thoại *" aria-required="true" aria-invalid="true" id="CJAGBUM" test="shippingAddress.telephone" aria-describedby="error-CJAGBUM">
+        </div>
+    </div>
+    <br>
+    <div class="control" data-bind="css: {'_with-tooltip': element.tooltip}">
+<input class="input-text" type="email" data-bind="
+    hasFocus: focused,
+    value: value,
+    attr: {
+        name: inputName,
+        placeholder: label,
+        'aria-describedby': getDescriptionId(),
+        'aria-required': required,
+        'aria-invalid': error() ? true : 'false',
+        id: uid,
+        disabled: disabled
+    }" name="custom_attributes[custom_email]" placeholder="E-mail" aria-invalid="false" id="T9XUBVE">
+    </div>
+    <br>
+    <div class="control" data-bind="css: {'_with-tooltip': element.tooltip}">
+        <div class="control-addon">
+        <input class="input-text pac-target-input" data-bind="
+    value: value().hasOwnProperty('value') ? value().value : value,
+    valueUpdate: 'keyup',
+    hasFocus: focused,
+    attr: {
+        name: inputName,
+        placeholder: ( element.dataScope == 'shippingAddress.street.0' ? 'Street Address' : element.label ),
+        'aria-describedby': getDescriptionId(),
+        'aria-required': required,
+        'aria-invalid': error() ? true : 'false',
+        id: uid,
+        disabled: disabled,
+        type: ( element.dataScope == 'shippingAddress.city' ||
+                element.dataScope == 'shippingAddress.region_id' ||
+                element.dataScope == 'shippingAddress.region' ||
+                element.dataScope == 'shippingAddress.postcode' ? 'hidden' : 'text' ),
+        autocomplete: ( element.dataScope == 'shippingAddress.custom_attributes.full_address' ? 'new-password' : 'off' )
+    }" name="custom_attributes[full_address]" placeholder="Nhập địa chỉ của bạn *" aria-invalid="false" id="Q0MLKLP" type="text" autocomplete="new-password" aria-required="true">
+            <label class="addon-prefix" data-bind="attr: { for: element.uid }" for="Q0MLKLP"><span data-bind="text: element.addbefore">Vui lòng nhập và chọn một địa chỉ được gợi ý. Nếu không có địa chỉ gợi ý nào phù hợp, vui lòng liên hệ số hotline của tổng đài để được hỗ trợ.</span></label>
+            
+        </div>
+    </div>
+    <br>
+    
+    
+
+<div class="step-title" data-role="title" data-bind="i18n: 'Shipping Methods'"><b>Phương thức vận chuyển</b></div>
+    <br>
+    <div class="circle-container">
+        <input type="radio" id="age1" name="age" value="30">
+  <label for="age1">Giao hàng tận nơi</label><br>
+    </div>
+
+    <div class="additional-lines" style="padding-left: 0px;">
+        <div class="line"></div>
+    </div>
+   
+    <div class="circle-container">
+        <input type="radio" id="age1" name="age" value="30">
+  <label for="age1">Hẹn lấy tại cửa hàng</label><br>
+    </div>
+
+
+    <script>
+        // Function to toggle the active circle
+        function toggleCircle(circle) {
+            // Remove 'active-circle' class from all circles
+            document.querySelectorAll('.circle').forEach(function(c) {
+                c.classList.remove('active-circle');
+            });
+
+            // Add 'active-circle' class to the clicked circle
+            circle.classList.add('active-circle');
+        }
+    </script>
+
+    <br>
+    <div class="store__pickup" data-bind="visible: isStorePickup()" >
+        <div class="field">
+            <label class="label" for="pickup-province" data-bind="i18n: 'State/Province'">Tỉnh thành</label>
+            <div class="control">
+                <select data-bind="options: provinces,
+                            value: selectedProvince,
+                            optionsText: 'name',
+                            optionsValue: 'id',
+                            optionsCaption: selectorProvinceCaption,
+                            attr: {
+                                id: 'pickup-province',
+                                name: 'pickup_province',
+                                class: ''
+                            },
+                            visible: isSelectStoreVisible()" id="pickup-province" name="pickup_province" class=""><option value="">Chọn tỉnh thành *</option><option value="1">Hồ Chí Minh</option></select>
+            </div>
+        </div>
+        <div class="field">
+            <label class="label" for="pickup-store" data-bind="i18n: 'Stores'">Cửa hàng</label>
+            <div class="control">
+                <select data-bind="options: storeArr,
+                            value: selectedStore,
+                            optionsText: 'name',
+                            optionsValue: 'id',
+                            optionsCaption: selectorCaption,
+                            attr: {
+                                id: 'pickup-store',
+                                name: 'pickup_store',
+                                class: ''
+                            },
+                            visible: isSelectStoreVisible()" id="pickup-store" name="pickup_store" class=""><option value="">Chọn cửa hàng *</option><option value="1">JBVN001 - Coopmart Xa Lộ Hà Nội</option><option value="2">JBVN003 - Pasteur</option><option value="3">JBVN004 - Trần Hưng Đạo</option><option value="8">JBVN016 - Coopmart Rạch Miễu</option><option value="9">JBVN018 - Vincom Cộng Hòa</option><option value="17">JBVN027 - Coopmart Lý Thường Kiệt</option><option value="28">JBVN052 - Coopmart Bình Triệu</option><option value="33">JBVN060 - Sài Gòn Star</option><option value="37">JBVN065 - Trường Chinh</option><option value="66">JBVN100 - Vincom Phan Văn Trị</option><option value="68">JBVN102 - Big C An Lạc</option><option value="69">JBVN104 -Vincom Lê Văn Việt</option><option value="80">JBVN115 - EC Âu Cơ</option><option value="95">JBVN130 - Co.op Xtra Sư Vạn Hạnh</option><option value="104">JBVN137 - Satra Củ Chi</option><option value="115">JBVN150 - Giga Mall Phạm Văn Đồng</option><option value="116">JBVN152 - Coopmart Topaz Home</option><option value="117">JBVN149 - Coopmart Sài Gòn Home</option><option value="122">JBVN159 - Coopmart Tô Ký</option><option value="125">JBVN164 - Moonlight Thủ Đức</option><option value="137">JBVN178 - EC Nguyễn Văn Quá</option><option value="138">JBVN173 - EC Lê Đức Thọ</option><option value="148">jbvn184 - EC Tân Hương</option><option value="150">JBVN186 -EC Nguyễn Duy Trinh</option><option value="151">JBVN183 - Coopmart Thang Loi</option><option value="160">JBVN195 - EC Phạm Văn Chiêu</option><option value="171">JBVN203 - EC Hiệp Bình</option><option value="181">jbvn216 - Delto Trần Hưng Đạo 2</option><option value="192">JBVN225 - EC Lê Văn Khương</option></select>
+            </div>
+        </div>
+    
+        <!-- ko if: selectedStore() --><!-- /ko -->
+    </div>
+
+
+
+
+
+    <div class="step-title" data-role="title" data-bind="i18n: 'Shipping Methods'"><b>Ghi chú đơn hàng</b></div>
+    <br>
+    <div class="control" data-bind="css: {'_with-tooltip': element.tooltip}">
+
+<textarea class="admin__control-textarea" data-bind="
+    value: value,
+    valueUpdate: valueUpdate,
+    hasFocus: focused,
+    attr: {
+        name: inputName,
+        cols: cols,
+        rows: rows,
+        'aria-describedby': noticeId,
+        placeholder: placeholder,
+        id: uid,
+        disabled: disabled
+    }" name="" cols="15" rows="3" aria-describedby="notice-OMYVSAT" placeholder="Ghi chú" id="OMYVSAT"></textarea>
+    </div>
+    <br>
+    <div class="actions-toolbar" id="shipping-method-buttons-container">
+        <div class="secondary" data-bind="visible: !isCustomerLoggedIn()">
+            <button data-role="opc-back" type="button" class="button action back secondary" onclick="goBack()" style="width: 150px;">
+                <span data-bind="i18n: 'Back'">Trở lại</span>
+            </button>
+        </div>
+        <div class="primary">
+            <button data-role="opc-continue" type="button" class="button action continue primary" onclick="submitForm()" style="width: 150px;">
+                <span data-bind="i18n: 'Next'">Tiếp theo</span>
+            </button>
+        </div>
+    </div>
+    
+    
+<br><br>
+
+
+<script>
+    // Hàm để quay lại trang trước đó
+    function goBack() {
+        window.history.back();
+    }
+    function submitForm() {
+        
+        window.location.href = "TrangChu.html";
+        alert("Bạn đã đặt đơn hàng thành công");
+    }
+</script>
+
+
+    </div>
+    <iframe src="foot.html" frameborder="0" id="myIframe" scrolling="no" style="width: 100%; height: 550px;"></iframe>
+    
+</body>
+</html>
